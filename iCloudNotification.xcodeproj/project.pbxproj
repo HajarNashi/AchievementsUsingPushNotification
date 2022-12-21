@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE22BDA42950521B008D381A /* CloudKitUserBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE22BDA32950521B008D381A /* CloudKitUserBoot.swift */; };
+		BE22BDA62950CEA5008D381A /* CloudKitCrudBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE22BDA52950CEA5008D381A /* CloudKitCrudBoot.swift */; };
 		BE3BF178294F68830005A20F /* iCloudNotificationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3BF177294F68830005A20F /* iCloudNotificationApp.swift */; };
 		BE3BF17A294F68830005A20F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3BF179294F68830005A20F /* ContentView.swift */; };
 		BE3BF17C294F68830005A20F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3BF17B294F68830005A20F /* Assets.xcassets */; };
 		BE3BF17F294F68830005A20F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3BF17E294F68830005A20F /* Preview Assets.xcassets */; };
+		BE8A9B0C2952577C006A1423 /* CloudKitNotificationBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8A9B0B2952577C006A1423 /* CloudKitNotificationBoot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE22BDA32950521B008D381A /* CloudKitUserBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUserBoot.swift; sourceTree = "<group>"; };
+		BE22BDA52950CEA5008D381A /* CloudKitCrudBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitCrudBoot.swift; sourceTree = "<group>"; };
 		BE3BF174294F68830005A20F /* iCloudNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCloudNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3BF177294F68830005A20F /* iCloudNotificationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudNotificationApp.swift; sourceTree = "<group>"; };
 		BE3BF179294F68830005A20F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE3BF17B294F68830005A20F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE3BF17E294F68830005A20F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE3BF18A294F6BAC0005A20F /* iCloudNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iCloudNotification.entitlements; sourceTree = "<group>"; };
+		BE8A9B0B2952577C006A1423 /* CloudKitNotificationBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitNotificationBoot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,10 @@
 		BE3BF176294F68830005A20F /* iCloudNotification */ = {
 			isa = PBXGroup;
 			children = (
+				BE3BF18A294F6BAC0005A20F /* iCloudNotification.entitlements */,
 				BE3BF177294F68830005A20F /* iCloudNotificationApp.swift */,
 				BE3BF179294F68830005A20F /* ContentView.swift */,
+				BE3BF187294F6A7E0005A20F /* CloudKitBootcamps */,
 				BE3BF17B294F68830005A20F /* Assets.xcassets */,
 				BE3BF17D294F68830005A20F /* Preview Content */,
 			);
@@ -65,6 +74,16 @@
 				BE3BF17E294F68830005A20F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE3BF187294F6A7E0005A20F /* CloudKitBootcamps */ = {
+			isa = PBXGroup;
+			children = (
+				BE22BDA32950521B008D381A /* CloudKitUserBoot.swift */,
+				BE22BDA52950CEA5008D381A /* CloudKitCrudBoot.swift */,
+				BE8A9B0B2952577C006A1423 /* CloudKitNotificationBoot.swift */,
+			);
+			path = CloudKitBootcamps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +158,9 @@
 			files = (
 				BE3BF17A294F68830005A20F /* ContentView.swift in Sources */,
 				BE3BF178294F68830005A20F /* iCloudNotificationApp.swift in Sources */,
+				BE8A9B0C2952577C006A1423 /* CloudKitNotificationBoot.swift in Sources */,
+				BE22BDA62950CEA5008D381A /* CloudKitCrudBoot.swift in Sources */,
+				BE22BDA42950521B008D381A /* CloudKitUserBoot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +286,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iCloudNotification/iCloudNotification.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iCloudNotification/Preview Content\"";
@@ -293,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iCloudNotification/iCloudNotification.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iCloudNotification/Preview Content\"";

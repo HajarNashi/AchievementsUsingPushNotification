@@ -11,7 +11,9 @@ import SwiftUI
 struct iCloudNotificationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          // CloudKitNotificationBoot()
+            CloudKitCrudBoot()
+           // CloudKitUserBoot()
         }
     }
 }
